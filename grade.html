@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Student Grade Calculator</title>
+    <link rel="stylesheet" href="/projects/grade validation/grade.css" />
+    <link
+      rel="icon"
+      href="data:image/png;base64,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"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Student Mark & Grade Calculator</h1>
+      <form id="markForm" class="markform">
+        <label for="s1">Language:</label>
+        <input type="number" placeholder="language" id="s1" required /><br>
+        <label for="s1">Maths:</label>
+        <input type="number" placeholder="Maths" id="s2" required /><br>
+        <label for="s1">Physics:</label>
+        <input type="number" placeholder="Physics" id="s3" required /><br>
+        <label for="s1">Chemistry:</label>
+        <input type="number" placeholder="Chemistry" id="s4" required /><br>
+        <label for="s1">Computer sciencs:</label>
+        <input type="number" placeholder="computer science" id="s5" required /><br>
+        <button type="submit" onclick="calculate()">Calculate</button><br>
+        
+      </form>
+
+      <div id="result">
+    </div>
+    <script src="/projects/grade validation/grade.js"></script>
+  </body>
+</html>
